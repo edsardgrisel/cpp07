@@ -1,6 +1,6 @@
 NAME = EX01
 CPP = c++
-CPPFLAGS = -Wall -Werror -Wextra -MMD -std=c++20 
+CPPFLAGS = -Wall -Werror -Wextra -MMD -std=c++98
 
 BUILD_DIR = build
 SRC =	main.cpp
