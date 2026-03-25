@@ -9,7 +9,7 @@ void iter(T1* array, const std::size_t size, T2 func)
 {
 	for (std::size_t i = 0; i < size; i++)
 	{
-		func((*array)[i]);
+		func((array)[i]);
 	}
 }
 

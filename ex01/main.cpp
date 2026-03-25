@@ -32,37 +32,37 @@ int main()
 		std::size_t size = 3;
 		for (size_t i = 0; i < size; i++) 
 			std::cout << array[i] << std::endl;
-		iter(&array, size, strToUpper);
+		iter(array, size, strToUpper);
 		for (size_t i = 0; i < size; i++) 
 			std::cout << array[i] << std::endl;
 	}
 	{
 		std::cout << std::endl;
 		char array[] = {'a', 'b', 'C'};
-		float size = 3;
+		std::size_t size = 3;
 		for (size_t i = 0; i < size; i++) 
 			std::cout << array[i] << std::endl;
-		iter(&array, size, charToUpper);
+		iter(array, size, charToUpper);
 		for (size_t i = 0; i < size; i++) 	
 			std::cout << array[i] << std::endl;
 	}
 	{
 		std::cout << std::endl;
 		float array[] = {1.0f, 1.5f, 10.0f, -25.0f};
-		float size = 4;
+		std::size_t size = 4;
 		for (size_t i = 0; i < size; i++) 
 			std::cout << array[i] << std::endl;
-		iter(&array, size, floatIncrement);
+		iter(array, size, floatIncrement);
 		for (size_t i = 0; i < size; i++) 
 			std::cout << array[i] << std::endl;
 	}
 	{
 		std::cout << std::endl;
 		int array[] = {1, 5};
-		float size = 2;
+		std::size_t size = 2;
 		for (size_t i = 0; i < size; i++) 
 			std::cout << array[i] << std::endl;
-		iter(&array, size, intDoNothing);
+		iter(array, size, intDoNothing);
 		for (size_t i = 0; i < size; i++) 
 			std::cout << array[i] << std::endl;
 	}
