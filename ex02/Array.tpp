@@ -28,7 +28,7 @@ Array<T>& Array<T>::operator=(const Array& other)
 	if (this == &other)
 		return *this;
 
-	delete this->array;
+	delete[] this->array;
 	this->array = new T[other.n];
 	for (unsigned int i = 0; i < other.n; i++)
 	{

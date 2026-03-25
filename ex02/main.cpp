@@ -59,6 +59,10 @@ int main()
 		personArray[1].age = 2;
 		personArray[1].name = "xyz";
 
+		Array<person> assignmentOverloadTestLest(1);
+		assignmentOverloadTestLest = personArray;
+
+
 		std::cout << "personArray contents [ ";
 		for (int i = 0; i < 2; i++)
 		{
@@ -68,6 +72,17 @@ int main()
 
 		try {
 			personArray[-1].age = 5;
+		} catch (std::exception& e) {
+			std::cout << e.what() << std::endl;
+		}
+	}
+	{
+		// test empty array
+		std::cout << "-------------test empty array" << std::endl;
+		Array<person> personArray(0);
+		std::cout << "person array size: " << personArray.size() << std::endl;
+		try {
+			personArray[0].age = 5;
 		} catch (std::exception& e) {
 			std::cout << e.what() << std::endl;
 		}
